@@ -1,0 +1,106 @@
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title Home
+        link(rel="stylesheet" type="text/css" href="css/style.css")
+        link(rel="stylesheet" type="text/css" href="css/responsive.css")
+    
+    body
+        header.header
+            .burger
+                span
+                span
+                span
+            
+            a(href="").logo
+                img(src="img/logo.svg", alt="")
+
+            form(action="").search
+                input(type="text" placeholder="Search...")#srch
+                button(type="button").search-btn
+                    include img/search.svg
+
+        main
+            img(src="img/bckimg.png", alt="").bckimg
+
+            .block2
+                p.feature FEATURED PLAYLIST
+                h1.isolation ISOLATION
+
+                .user-count
+                    div
+                        include img/guli.svg
+                        p 151
+                    div
+                        include img/eye.svg
+                        p 52512
+                    div
+                        include img/com.svg
+                        p 18
+
+                a(href="").play PLAY NOW
+
+            
+            .gallery
+                .g-left
+                    figure.top-f
+                        img(src="img/4.png", alt="").g-75
+                        img(src="img/5.png", alt="").g-150
+                    figure.center-f
+                        img(src="img/6.png", alt="").g-75
+                        img(src="img/7.png", alt="").g-300
+                    figure.bottom-f
+                        img(src="img/8.png", alt="").g-75
+                        img(src="img/9.png", alt="").g-150
+
+
+                .g-center
+                    img(src="img/1.png", alt="").g-300
+                    img(src="img/2.png", alt="").g-300.gcc
+                    .g-300.outer
+                        img(src="img/3.png", alt="")
+
+                .g-right
+                    figure.top-f
+                        img(src="img/10.png", alt="").g-150
+                        img(src="img/11.png", alt="").g-75
+                    figure.center-f
+                        img(src="img/12.png", alt="").g-300
+                        img(src="img/13.png", alt="").g-75
+                    figure.bottom-f
+                        img(src="img/14.png", alt="").g-150
+                        img(src="img/15.png", alt="").g-75
+
+            .white-block
+                h3.about ABOUT
+                p.design DesignersMX combines our passion for music with our passion for design.
+                p.desc Create finely-curated mixes with music that moves and cover art that’s beautiful. Discover new  music. Discover new design.Discover your mix of inspiration.
+
+                a(href="").sign SIGN UP NOW
+
+
+
+
+
+        footer.footer
+            .soc
+                a(href="")
+                    include img/tw.svg
+                a(href="")
+                    include img/inst.svg
+            
+            .nav
+                a(href="") DESIGNERS
+                a(href="") MIXES
+                a(href="") ABOUT
+                a(href="") CONTACT
+
+            a.foo-logo(href="")
+                include img/icon.svg
+               
+              
+        
+        script(src="js/jquery-3.2.1.min.js")
+        script(src="js/main.js")
